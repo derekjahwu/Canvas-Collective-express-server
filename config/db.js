@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const db = "mongodb+srv://admin:admin@cluster0.lotklk8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-/* Replace <password> with your database password */
 
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 

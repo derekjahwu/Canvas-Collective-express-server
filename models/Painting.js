@@ -1,26 +1,19 @@
 const mongoose = require('mongoose');
 
-const BookSchema = new mongoose.Schema({
+const PaintingSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
   },
-  isbn: {
-    type: String,
-    required: true
-  },
-  author: {
+  artist: {
     type: String,
     required: true
   },
   description: {
     type: String
   },
-  published_date: {
-    type: Date
-  },
-  publisher: {
-    type: String
+  year: {
+    type: Number
   },
   updated_date: {
     type: Date,
