@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-const db = "mongodb+srv://admin:admin@cluster0.lotklk8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const db = "mongodb+srv://derek:MwMqV8drYnDj7f2Q@paintings.wgybyca.mongodb.net/?retryWrites=true&w=majority&appName=Paintings";
+
+//mongodb+srv://derek:MwMqV8drYnDj7f2Q@paintings.wgybyca.mongodb.net/
 
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 

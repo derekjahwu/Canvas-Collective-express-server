@@ -9,11 +9,11 @@ const PaintingSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  description: {
-    type: String
-  },
   year: {
     type: Number
+  },
+  link: {
+    type: String
   },
   updated_date: {
     type: Date,
@@ -21,4 +21,4 @@ const PaintingSchema = new mongoose.Schema({
   }
 });
 
-module.exports = Book = mongoose.model('book', BookSchema);
+module.exports = Painting = mongoose.model('painting', PaintingSchema);

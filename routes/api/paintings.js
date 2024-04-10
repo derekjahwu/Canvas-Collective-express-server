@@ -9,8 +9,8 @@ const Painting = require('../../models/Painting');
 // @access  Public
 router.get('/test', (req, res) => res.send('painting route testing!'));
 
-// @route   GET api/books
-// @desc    Get all books
+// @route   GET api/painting
+// @desc    Get all painting
 // @access  Public
 router.get('/', (req, res) => {
   Painting.find()
