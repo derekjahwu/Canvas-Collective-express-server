@@ -9,7 +9,7 @@ const PaintingSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  year: {
+  date: {
     type: Number
   },
   link: {
