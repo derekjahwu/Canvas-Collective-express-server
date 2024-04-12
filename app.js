@@ -15,12 +15,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // use the routes module as a middleware
-// for the /api/books path
+// for the /api/paintings path
 app.use("/api/paintings", routes);
 
 // Connect Database
 connectDB();
 
-app.get("/", (req, res) => res.send("Hello world!"));
 const port = process.env.PORT || 8082;
 app.listen(port, () => console.log(`Server running on port ${port}`));
