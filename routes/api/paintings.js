@@ -1,13 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// Load Book model
+// Load Painting model
 const Painting = require('../../models/Painting');
-
-// @route   GET api/painting/test
-// @desc    Tests books route
-// @access  Public
-router.get('/test', (req, res) => res.send('painting route testing!'));
 
 // @route   GET api/painting
 // @desc    Get all painting
@@ -18,8 +13,8 @@ router.get('/', (req, res) => {
     .catch(err => res.status(404).json({ nopaintingsfound: 'No Books found' }));
 });
 
-// @route   GET api/books/:id
-// @desc    Get single book by id
+// @route   GET api/painting/:id
+// @desc    Get single painting by id
 // @access  Public
 router.get('/:id', (req, res) => {
     Painting.findById(req.params.id)
@@ -27,8 +22,8 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(404).json({ nopaintingfound: 'No Book found' }));
 });
 
-// @route   POST api/books
-// @desc    Add/save book
+// @route   POST api/painting
+// @desc    Add/save painting
 // @access  Public
 router.post('/', (req, res) => {
     Painting.create(req.body)
